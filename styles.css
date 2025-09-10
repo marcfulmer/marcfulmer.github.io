@@ -45,8 +45,8 @@ body {
 	margin: 0 auto;
 	background-color: #FFF;
 	padding: 0 2.5rem 2.5rem 2.5rem;
-	*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	*border-radius: 5px;
+	/* Previously box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px; */
 }
 
 .flexbox {
@@ -117,7 +117,7 @@ img {
 }
 
 p {
-	margin-left: 1.25rem;
+	margin-left: 2.5rem;
 	line-height: 1.33;
 	font-size: 1.25rem;
 }
@@ -187,6 +187,11 @@ h2 {
 p {
 	margin-left: 0;
 	font-size: 1rem;
+}
+
+.container {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 .footer {
