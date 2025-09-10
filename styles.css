@@ -186,12 +186,20 @@ h2 {
 
 p {
 	margin-left: 0;
-	font-size: 1rem;
+	font-size: 1.125rem;
+}
+
+img {
+	display: block;
+	margin: auto;
+	border-radius: 5px;
+	max-width: 50%;
+	height: auto;
 }
 
 .container {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding-left: 0.125rem;
+	padding-right: 0.125rem;
 }
 
 .footer {
