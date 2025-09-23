@@ -77,28 +77,30 @@ nav li {
 nav a {
     font-family: "Source Sans", serif;
     text-decoration: none;
-    text-transform: uppercase;
-	font-weight: 500;
 }
 
 nav a:link {
-	color: #4169E1;
+	color: #000;
+	font-weight: 400;
 }
 
 nav a:visited {
-	color: #4169E1;
+	color: #000;
+	font-weight: 400;
 }
 
 nav a:hover {
-	color: #B0C4DE;
+	color: #000;
+	font-weight: 400;
 }
 
 nav a:active {
-	color: #B0C4DE;
+	color: #000;
+	font-weight: 400;
 }
 
 nav a.current {
-	color: #B0C4DE;
+	border-bottom: 2px solid #000;
 }
 
 h1 {
