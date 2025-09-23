@@ -76,13 +76,25 @@ nav li {
 
 nav a {
     font-family: "Source Sans", serif;
-    color: #4169E1;
     text-decoration: none;
     text-transform: uppercase;
+	font-weight: 500;
+}
+
+nav a:link {
+	color: #4169E1;
+}
+
+nav a:visited {
+	color: #4169E1;
 }
 
 nav a:hover {
-    color: #B0C4DE;
+	color: #B0C4DE;
+}
+
+nav a:active {
+	color: #B0C4DE;
 }
 
 nav a.current {
@@ -94,7 +106,7 @@ h1 {
 	padding: 0;
 	margin: 0;
 	font-size: 2.75rem;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 h2 {
