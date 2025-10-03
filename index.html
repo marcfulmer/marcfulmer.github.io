@@ -14,37 +14,45 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Marc Fulmer",
-  "url": "https://marcfulmer.com/",
-  "sameAs": "https://marcfulmer.com/",
-  "jobTitle": "Economics Job Market Candidate",
-  "image": "https://marcfulmer.com/MarcFulmer_headshot_2x3.PNG",
-  "alumniOf": [
-    {
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Marc Fulmer",
+    "url": "https://marcfulmer.com/",
+    "sameAs": "https://marcfulmer.com/",
+    "jobTitle": "Economics Job Market Candidate",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://marcfulmer.com/MarcFulmer_headshot_2x3.PNG",
+      "width": 600,
+      "height": 900
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Michigan State University",
+        "sameAs": "https://msu.edu/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Temple University",
+        "sameAs": "https://www.temple.edu/"
+      }
+    ],
+    "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "Michigan State University",
       "sameAs": "https://msu.edu/"
     },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Temple University",
-      "sameAs": "https://www.temple.edu/"
-    }
-  ],
-  "affiliation": {
-    "@type": "CollegeOrUniversity",
-    "name": "Michigan State University",
-    "sameAs": "https://msu.edu/"
-  },
-  "knowsAbout": [
-    "Health Economics",
-    "Labor Economics",
-    "Public Economics",
-    "Social Insurance",
-    "Workers' Compensation",
-    "Social Security Disability Insurance"
-  ]
+    "knowsAbout": [
+      "Health Economics",
+      "Labor Economics",
+      "Public Economics",
+      "Social Insurance",
+      "Workers' Compensation",
+      "Social Security Disability Insurance"
+    ]
+  }
 }
 </script>
 </head>
