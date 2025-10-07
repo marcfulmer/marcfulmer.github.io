@@ -217,6 +217,11 @@ p {
 	font-size: 1.125rem;
 }
 
+.contact-links {
+	margin-left: 0;
+	font-size: 1.125rem;
+}
+
 img {
 	display: block;
 	margin: auto;
