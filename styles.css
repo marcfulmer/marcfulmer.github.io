@@ -123,6 +123,7 @@ h2 {
   padding-left: 0; /* Removes the default indentation */
   font-size: 1.25rem;
   margin-left: 2.5rem;
+  margin-top: 0;
 }
 
 .contact-links li {
@@ -133,8 +134,8 @@ h2 {
     font-weight: 500;
 }
 
-.italic
-    {font-style: italic;
+.italic {
+	font-style: italic;
 }
 
 img {
@@ -146,6 +147,7 @@ img {
 
 p {
 	margin-left: 2.5rem;
+	margin-bottom: 1em;
 	line-height: 1.33;
 	font-size: 1.25rem;
 }
