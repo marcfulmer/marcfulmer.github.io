@@ -1,121 +1,128 @@
 @font-face {
-	font-family: "Source Sans";
-	src: url(SourceSans3-VariableFont_wght.ttf);
-	font-weight: 200 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Source Sans";
+  src: url(SourceSans3-VariableFont_wght.ttf);
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "Source Sans";
-	src: url(SourceSans3-Italic-VariableFont_wght.ttf);
-	font-weight: 200 900;
-	font-style: italic;
-	font-display: swap;
+  font-family: "Source Sans";
+  src: url(SourceSans3-Italic-VariableFont_wght.ttf);
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "Source Serif";
-	src: url(SourceSerif4-VariableFont_opsz,wght.ttf);
-	font-weight: 200 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Source Serif";
+  src: url(SourceSerif4-VariableFont_opsz,wght.ttf);
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "Source Serif";
-	src: url(SourceSerif4-Italic-VariableFont_opsz,wght.ttf);
-	font-weight: 200 900;
-	font-style: italic;
-	font-display: swap;
+  font-family: "Source Serif";
+  src: url(SourceSerif4-Italic-VariableFont_opsz,wght.ttf);
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
-	font-family: "Source Serif", sans-serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 1.25rem;
-	line-height: 1.6;
-	background-color: #FFF; /* Previously #FFF8E7 */
-	color: #222;
+ font-family: "Source Serif", sans-serif;
+ font-size: 16px;
+ margin: 0;
+ padding: 1.25rem;
+ line-height: 1.6;
+ background-color: #FFF; /* Previously #FFF8E7 */
+ color: #222;
 }
 
 .container {
-	max-width: 1000px;
-	margin: 0 auto;
-	background-color: #FFF;
-	padding: 0 2.5rem 2.5rem 2.5rem;
-	/* Previously box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	border-radius: 5px; */
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  /* Previously box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; */
 }
 
 .flexbox {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	margin-top: 0;
-	padding-top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
-    margin: 0;
+  margin: 0;
 }
 
 nav li {
-	font-size: 1.125rem;
-    list-style: none;
-    display: inline-block;
-    margin: 0 0 0 1rem;
+  font-size: 1.125rem;
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 0 1rem;
 }
 
 nav a {
-    font-family: "Source Sans", serif;
-    text-decoration: none;
+  font-family: "Source Sans", serif;
+  text-decoration: none;
 }
 
 nav a:link {
-	color: #000;
-	font-weight: 400;
+  color: #000;
+  font-weight: 400;
 }
 
 nav a:visited {
-	color: #000;
-	font-weight: 400;
+  color: #000;
+  font-weight: 400;
 }
 
 nav a:hover {
-	color: #000;
-	font-weight: 400;
-	border-bottom: 2px solid #000;
+  color: #000;
+  font-weight: 400;
+  border-bottom: 2px solid #000;
 }
 
 nav a:active {
-	color: #000;
-	font-weight: 400;
+  color: #000;
+  font-weight: 400;
 }
 
 nav a.current {
-	border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 h1 {
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	font-size: 2.75rem;
-	font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: #DCDCDC;
 }
 
 h2 {
-	font-size: 1.375rem;
-	font-weight: 700;
-	font-style: italic;
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .contact-links {
@@ -131,113 +138,95 @@ h2 {
 }
 
 .paper-title {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 img {
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-	max-width: 100%;
-	height: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  height: auto;
 }
 
 p {
-	margin-left: 2.5rem;
-	margin-bottom: 1em;
-	line-height: 1.33;
-	font-size: 1.25rem;
-}
-
-.card {
-	margin-top: 0;
-	margin-left: 0;
-	margin-bottom: 0.5rem;
-}
-
-i {
-	margin-right: 0.5rem;
-	margin-bottom: 0.75rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1em;
+  line-height: 1.33;
+  font-size: 1.25rem;
 }
 
 .footer {
-	text-align: center;
-	font-size: 0.875rem;
-	margin-top: 3rem;
-}
-
-hr {
-	margin: 0;
-	border: 0;
-	height: 1px;
-	background-color: #DCDCDC;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 3rem;
 }
 
 a:link {
-	color: #4169E1;
-	font-weight: 500;
+  color: #4169E1;
+  font-weight: 500;
 }
 
 a:visited {
-	color: #4169E1;
-	font-weight: 500;
+  color: #4169E1;
+  font-weight: 500;
 }
 
 a:hover {
-	color: #4169E1;
-	font-weight: 500;
-	text-decoration: none;
+  color: #4169E1;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 a:active {
-	color: #4169E1;
-	font-weight: 500;
+  color: #4169E1;
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
-h1 {
-	font-size: 2.5rem;
-}
+  .container {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
 
-h2 {
-	font-size: 1.25rem;
-}
+  h2 {
+    font-size: 1.25rem;
+  }
 
-.italic {
+  .italic {
     text-align: center;
-}
+  }
 
-.flexbox {
-	flex-direction: column;
-}
+  .flexbox {
+    flex-direction: column;
+  }
 
-p {
-	margin-left: 0;
-	font-size: 1.125rem;
-}
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    max-width: 50%;
+    height: auto;
+  }
 
-.contact-links {
-	margin-left: 0;
-	font-size: 1.125rem;
-}
+  p {
+    margin-left: 0;
+    font-size: 1.125rem;
+  }
 
-img {
-	display: block;
-	margin: auto;
-	border-radius: 5px;
-	max-width: 50%;
-	height: auto;
-}
-
-.container {
-	padding-left: 0.125rem;
-	padding-right: 0.125rem;
-}
-
-.footer {
-	font-size: 0.75rem;
-}
+  .contact-links {
+    margin-left: 0;
+    font-size: 1.125rem;
+  }
+  
+  .footer {
+    font-size: 0.75rem;
+  }
 }
