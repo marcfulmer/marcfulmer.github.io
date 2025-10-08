@@ -31,13 +31,13 @@
 }
 
 body {
- font-family: "Source Serif", sans-serif;
- font-size: 16px;
- margin: 0;
- padding: 1.25rem;
- line-height: 1.6;
- background-color: #FFF; /* Previously #FFF8E7 */
- color: #222;
+  font-family: "Source Serif", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 1.25rem;
+  line-height: 1.6;
+  background-color: #FFF; /* Previously #FFF8E7 */
+  color: #222;
 }
 
 .container {
