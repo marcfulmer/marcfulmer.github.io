@@ -129,8 +129,8 @@ h2 {
   list-style: none; /* Removes the bullet points */
   padding-left: 0; /* Removes the default indentation */
   font-size: 1.25rem;
-  margin-left: 2.5rem;
-  margin-top: 0;
+  margin-left: 0;  /* Changed from 2.5rem */
+  margin-top: 1.25rem;  /* Add space above the links */
 }
 
 .contact-links li {
