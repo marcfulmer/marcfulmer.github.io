@@ -186,7 +186,7 @@ a:active {
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .container {
     padding-left: 0.125rem;
     padding-right: 0.125rem;
