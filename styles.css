@@ -186,6 +186,59 @@ a:active {
   font-weight: 500;
 }
 
+.center {
+	text-align: center;
+}
+
+/* Base Button Style */
+a.pill-button {
+  font-family: "Source Sans", serif;
+  display: inline-block;
+  background-color: #4169E1;
+  color: white; /* This needs to stick */
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+  border: 2px solid transparent;
+}
+
+/* Ensure Visited links don't turn blue/purple */
+a.pill-button:visited {
+  color: white;
+}
+
+/* Hover Effect */
+a.pill-button:hover {
+  background-color: #002a4d;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Outline/Ghost Button Overrides */
+a.pill-button-outline {
+  background-color: transparent;
+  color: #4169E1; /* Blue text for outline button */
+  border: 2px solid #4169E1;
+}
+
+/* Outline Visited */
+a.pill-button-outline:visited {
+  color: #4169E1;
+}
+
+/* Outline Hover */
+a.pill-button-outline:hover {
+  background-color: #4169E1;
+  color: white; /* Turns white on hover */
+}
+
 @media (max-width: 768px) {
   .container {
     padding-left: 0.125rem;
@@ -218,7 +271,7 @@ a:active {
 
   p {
     margin-left: 0;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .contact-links {
@@ -228,5 +281,25 @@ a:active {
   
   .footer {
     font-size: 0.75rem;
+  }
+
+/* The Container: Forces vertical stacking */
+  .button-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks items top-to-bottom */
+    align-items: center;    /* Centers items horizontally */
+    gap: 1.5rem;              /* Adds space between the stacked buttons */
+    margin-top: 2rem;
+  }
+
+  /* The Buttons: Adjustments for the stack */
+  a.pill-button, 
+  a.pill-button-outline {
+    margin: 0;       /* Remove the desktop margins */
+    width: 200px;    /* Optional: Sets a uniform width for a cleaner look */
+    text-align: center; 
+    display: flex;          /* These 3 lines ensure text centers perfectly... */
+    justify-content: center;/* ...inside the button itself */
+    align-items: center;
   }
 }
