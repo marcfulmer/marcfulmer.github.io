@@ -215,7 +215,7 @@ a.pill-button:visited {
 
 /* Hover Effect */
 a.pill-button:hover {
-  background-color: #002a4d;
+  background-color: #00008B;
   color: white;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
