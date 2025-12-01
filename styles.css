@@ -187,7 +187,7 @@ a:active {
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 /* Base Button Style */
@@ -271,7 +271,7 @@ a.pill-button-outline:hover {
 
   p {
     margin-left: 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .contact-links {
