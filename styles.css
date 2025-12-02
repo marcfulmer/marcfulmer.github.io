@@ -244,7 +244,7 @@ a.pill-button-outline:hover {
   color: white; /* Turns white on hover */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .container {
     padding-left: 0.125rem;
     padding-right: 0.125rem;
@@ -270,7 +270,7 @@ a.pill-button-outline:hover {
     display: block;
     margin: auto;
     border-radius: 5px;
-    max-width: 50%;
+    max-width: 300px;
     height: auto;
   }
 
