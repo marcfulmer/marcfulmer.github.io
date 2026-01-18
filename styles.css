@@ -60,6 +60,8 @@ body {
   flex-direction: row;
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 nav {
@@ -244,6 +246,11 @@ a.pill-button-outline:hover {
   color: white; /* Turns white on hover */
 }
 
+.button-wrapper {
+  margin-left: calc(229px + 2.5rem + 2.5rem);
+  margin-top: 1em;
+}
+
 @media (max-width: 1080px) {
   .container {
     padding-left: 0.125rem;
@@ -291,12 +298,13 @@ a.pill-button-outline:hover {
 /* The Container: Forces vertical stacking */
   .button-wrapper {
     display: flex;
-    flex-direction: column; /* Stacks items top-to-bottom */
-    align-items: center;    /* Centers items horizontally */
-    gap: 1.5rem;              /* Adds space between the stacked buttons */
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     margin-top: 2rem;
+    margin-left: 0;  /* Add this line */
   }
-
+  
   /* The Buttons: Adjustments for the stack */
   a.pill-button, 
   a.pill-button-outline {
