@@ -282,7 +282,7 @@ a.pill-button-outline:hover {
   img {
     display: block;
     margin: auto;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     border-radius: 5px;
     max-width: 300px;
     height: auto;
