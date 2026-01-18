@@ -245,6 +245,16 @@ a.pill-button-outline:hover {
   color: white; /* Turns white on hover */
 }
 
+.flexbox > div:first-child {
+  flex: 0 0 320px;
+  margin-right: 2rem;
+}
+
+.flexbox > div:first-child img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1080px) {
   .container {
     padding-left: 0.125rem;
