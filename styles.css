@@ -247,7 +247,12 @@ a.pill-button-outline:hover {
   color: white; /* Turns white on hover */
 }
 
+.bottom-paragraph {
+  margin-bottom: 0;
+}
+
 .button-wrapper {
+  margin-top: 1rem;
   margin-left: calc(229px + 2.5rem);
 }
 
