@@ -254,7 +254,12 @@ a.pill-button-outline:hover {
 
 .button-wrapper {
   margin-top: 1rem;
-  margin-left: calc(229px + 2.5rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills {
+  margin-left: 0;
 }
 
 @media (max-width: 1080px) {
