@@ -260,39 +260,51 @@ a.pill-button-outline:hover {
   margin-bottom: 0;
 }
 
-/* Forensic Dashboard & Methodology Styles */
+/* === Forensic Dashboard & Methodology Styles === */
 
+/* Tableau Container */
 .tableau-container {
     width: 100%;
-    height: 850px;
+    height: 850px; /* Fixed height ensures map is readable on small screens */
     overflow: hidden;
     margin-top: 1.5rem;
-}
-
-.dashboard-link-container {
-    background-color: #f8f9fa;
-    border-left: 4px solid #0056b3;
-    padding: 1rem;
     margin-bottom: 2rem;
+    border: 1px solid #eee; /* Optional: adds a crisp edge to the viz */
 }
 
+/* Methodology Section Header */
+.methodology-section-header {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Variable Definitions List (Bullets) */
 .variable-list {
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-size: inherit; /* Ensures exact match with paragraph text */
 }
 
+.variable-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Methodology Definition List (Terms & Definitions) */
 .methodology-list {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
+    font-size: inherit; /* Ensures exact match with paragraph text */
 }
 
+/* The Terms (e.g., "1. Pending Caseload Intensity") */
 .methodology-list dt {
     font-weight: bold;
-    margin-top: 1.2rem;
-    font-size: 1.05rem;
+    margin-top: 1rem;
     color: #333;
+    font-size: inherit; /* No larger than standard text */
 }
 
+/* The Definitions */
 .methodology-list dd {
     margin-left: 0;
     margin-bottom: 0.5rem;
