@@ -40,7 +40,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 1.25rem;
-  line-height: 1.6;
+  line-height: 1.33;
   background-color: #FFF;
   color: #222;
 }
@@ -278,7 +278,7 @@ a.pill-button-outline:hover {
 /* Intro Paragraph Styling */
 .methodology-intro {
     font-size: 1.125rem; /* Smaller size per latest request */
-    line-height: 1.6;
+    line-height: 1.33;
     margin-bottom: 1rem;
     color: #333;
     margin-left: 2.5rem; /* Align with P */
