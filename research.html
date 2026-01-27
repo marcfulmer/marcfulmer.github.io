@@ -121,41 +121,41 @@
                 var viz = new tableau.Viz(divElement, url, options);
             </script>
             <p class="methodology-section-header">Methodology & Definitions</p>
-            <p class="methodology-intro">This analysis utilizes SSA State Agency Monthly Workload (SA MOWL) data. The derived metrics are constructed from three core administrative variables:</p>
+            <p class="methodology-intro">This analysis utilizes SSA State Agency Monthly Workload (SA MOWL) data on claims for Social Security Disability Insurance and Supplemental Security Income. The derived metrics are constructed from three core administrative variables, where (All Initial) refers to claims for Social Security Disability Insurance, Supplemental Security Income, or both:</p>
             
             <ul class="variable-list">
-                <li><strong>[Receipts (All Initial)]:</strong> The total count of new initial claims received by the state agency in the reporting month.</li>
-                <li><strong>[Determinations (All Initial)]:</strong> The total count of initial claims processed (cleared) by the state agency in the reporting month.</li>
-                <li><strong>[Closing Pending (All Initial)]:</strong> The total count of active initial claims remaining in the state agency's queue at the end of the reporting month.</li>
+                <li><strong>[Receipts (All Initial)]:</strong> The total count of new initial claims received by the state Disability Determination Service in the reporting month.</li>
+                <li><strong>[Determinations (All Initial)]:</strong> The total count of initial claims processed (cleared) by the state Disability Determination Service in the reporting month.</li>
+                <li><strong>[Closing Pending (All Initial)]:</strong> The total count of active initial claims remaining in the state Disability Determination Service queue at the end of the reporting month.</li>
             </ul>
 
             <ol class="methodology-list">
                 <li>
                     <strong>Pending Caseload Intensity</strong><br>
-                    <em>Formula: [Closing Pending] / [Monthly Receipts]</em><br>
-                    This metric measures "Months of Inventory." It normalizes the size of the pending caseload relative to the office's current intake volume. For example, a value of 4.0 indicates that the state holds four months' worth of work in its queue at current intake rates. Higher values indicate higher systemic pressure, regardless of the state's size.
+                    <em>Formula: [Closing Pending (All Initial)] / [Receipts (All Initial)]</em><br>
+                    This metric measures &ldquo;Months of Inventory.&rdquo; It normalizes the size of the pending caseload relative to the office&rsquo;s current intake volume. For example, a value of 4.0 indicates that the state holds four months&rsquo; worth of work in its queue at current intake rates. Higher values indicate higher intensity, regardless of the state&rsquo;s size.
                 </li>
 
                 <li>
                     <strong>Clearance Ratio</strong><br>
-                    <em>Formula: [Determinations] / [Monthly Receipts]</em><br>
-                    This measures the agency's ability to keep pace with incoming work (Speed vs. Intake). A ratio greater than 1.0 indicates the agency is clearing cases faster than they arrive (reducing the backlog), while a ratio less than 1.0 indicates the backlog is growing.
+                    <em>Formula: [Determinations (All Initial)] / [Receipts (All Initial)]</em><br>
+                    This measures the agency&rsquo;s ability to keep pace with incoming work. A ratio greater than 1.0 indicates the agency is clearing cases faster than they arrive (reducing the caseload), while a ratio less than 1.0 indicates the caseload is growing.
                 </li>
 
                 <li>
                     <strong>Net Pending Caseload Growth</strong><br>
-                    <em>Formula: [Monthly Receipts] - [Determinations]</em><br>
-                    This represents the raw volume added to the pile in a given month. A positive value means intake exceeded clearance (growth), while a negative value means the agency successfully reduced its total inventory.
+                    <em>Formula: [Receipts (All Initial)] - [Determinations (All Initial)]</em><br>
+                    This represents the raw volume added to the caseload in a given month. A positive value means intake exceeded clearance, while a negative value means the agency successfully reduced its total inventory.
                 </li>
 
                 <li>
-                    <strong>Operational Status (Scatterplot Segmentation)</strong><br>
+                    <strong>Operational Status</strong><br>
                     To diagnose agency health, states are segmented based on the interaction between pressure and speed:
                     <ul class="status-sublist">
-                        <li><strong>Overloaded:</strong> (High Intensity + Low Clearance) – Heavy inventory with slowing processing speeds.</li>
-                        <li><strong>Accumulating:</strong> (Low Intensity + Low Clearance) – Manageable inventory, but processing is too slow to prevent growth.</li>
-                        <li><strong>High Volume:</strong> (High Intensity + High Clearance) – Heavy workload but successfully managing the surge.</li>
-                        <li><strong>Stable:</strong> (Low Intensity + High Clearance) – Operating within healthy limits.</li>
+                        <li><strong>Overloaded:</strong> (High Intensity + Low Clearance) &ndash; Heavy inventory with slowing processing speeds.</li>
+                        <li><strong>Accumulating:</strong> (Low Intensity + Low Clearance) &ndash; Manageable inventory, but processing is too slow to prevent growth.</li>
+                        <li><strong>High Volume:</strong> (High Intensity + High Clearance) &ndash; Heavy workload but successfully managing the surge.</li>
+                        <li><strong>Stable:</strong> (Low Intensity + High Clearance) &ndash; Operating within healthy limits.</li>
                     </ul>
                 </li>
             </ol>
@@ -188,3 +188,4 @@
     </noscript>
     </body>
 </html>
+
