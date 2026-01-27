@@ -94,14 +94,15 @@
             <hr>
         </header>
         <main>
+            
             <h2>Job Market Paper</h2>
             <p><strong class="paper-title"><a href="MarcFulmerJMP.pdf" target="_blank" rel="noopener noreferrer">Understanding changes over time in the receipt of workers&rsquo; compensation benefits</a></strong></p>
             <p><strong>Project Summary:</strong> A mathematical trend decomposition utilizing survey data to isolate the components of a 43.6% decrease in benefit recipiency</p>
-            <p><em>Abstract:</em> Workers&rsquo; compensation, the oldest social insurance program in the United States, continues to serve as an important safety net for the vast majority of the workforce. The program supports workers at a particularly vulnerable time: immediately after suffering an occupational injury or illness. Yet, despite this vital role in supporting workers, less is known about the program&rsquo;s long-term trends in recipiency. To understand these trends, I used a descriptive decomposition framework to systematically investigate the reasons for the 43.6 percent decrease in the recipiency rate of cash benefits over the period from 2003 through 2018. I find that 68 percent of this decrease&mdash;29.5 percentage points&mdash;is associated with improvements to workplace safety.</p>   
-            
+            <p><em>Abstract:</em> Workers&rsquo; compensation, the oldest social insurance program in the United States, continues to serve as an important safety net for the vast majority of the workforce. The program supports workers at a particularly vulnerable time: immediately after suffering an occupational injury or illness. Yet, despite this vital role in supporting workers, less is known about the program&rsquo;s long-term trends in recipiency. To understand these trends, I used a descriptive decomposition framework to systematically investigate the reasons for the 43.6 percent decrease in the recipiency rate of cash benefits over the period from 2003 through 2018. I find that 68 percent of this decrease&mdash;29.5 percentage points&mdash;is associated with improvements to workplace safety.</p>
+
             <h2>Forensic Data Analysis</h2>
             
-            <p><strong class="paper-title">Interactive Dashboard: Forensic Analysis of SSA Pending Caseload</strong></p>
+            <p><strong class="paper-title">Interactive Dashboard: Forensic Analysis of SSA Pending Caseloads</strong></p>
             <p><strong>Project Summary:</strong> A forensic audit of operational performance across 50 state Disability Determination Services agencies. This project aggregates administrative data to visualize systemic pressure, comparing office workload intensity against processing speed.</p>
             
             <div id="vizContainer" class="tableau-container"></div>
@@ -119,8 +120,8 @@
                 };
                 var viz = new tableau.Viz(divElement, url, options);
             </script>
-            <p class="methodology-section-header"><strong>Methodology & Definitions</strong></p>
-            <p>This analysis utilizes SSA State Agency Monthly Workload (SA MOWL) data. The derived metrics are constructed from three core administrative variables:</p>
+            <p class="methodology-section-header">Methodology & Definitions</p>
+            <p class="methodology-intro">This analysis utilizes SSA State Agency Monthly Workload (SA MOWL) data. The derived metrics are constructed from three core administrative variables:</p>
             
             <ul class="variable-list">
                 <li><strong>[Receipts (All Initial)]:</strong> The total count of new initial claims received by the state agency in the reporting month.</li>
@@ -128,29 +129,36 @@
                 <li><strong>[Closing Pending (All Initial)]:</strong> The total count of active initial claims remaining in the state agency's queue at the end of the reporting month.</li>
             </ul>
 
-            <dl class="methodology-list">
-                <dt>1. Pending Caseload Intensity</dt>
-                <dd><em>Formula: [Closing Pending] / [Monthly Receipts]</em><br>
-                This metric measures "Months of Inventory." It normalizes the size of the pending caseload relative to the office's current intake volume. For example, a value of 4.0 indicates that the state holds four months' worth of work in its queue at current intake rates. Higher values indicate higher systemic pressure, regardless of the state's size.</dd>
+            <ol class="methodology-list">
+                <li>
+                    <strong>Pending Caseload Intensity</strong><br>
+                    <em>Formula: [Closing Pending] / [Monthly Receipts]</em><br>
+                    This metric measures "Months of Inventory." It normalizes the size of the pending caseload relative to the office's current intake volume. For example, a value of 4.0 indicates that the state holds four months' worth of work in its queue at current intake rates. Higher values indicate higher systemic pressure, regardless of the state's size.
+                </li>
 
-                <dt>2. Clearance Ratio</dt>
-                <dd><em>Formula: [Determinations] / [Monthly Receipts]</em><br>
-                This measures the agency's ability to keep pace with incoming work (Speed vs. Intake). A ratio greater than 1.0 indicates the agency is clearing cases faster than they arrive (reducing the backlog), while a ratio less than 1.0 indicates the backlog is growing.</dd>
+                <li>
+                    <strong>Clearance Ratio</strong><br>
+                    <em>Formula: [Determinations] / [Monthly Receipts]</em><br>
+                    This measures the agency's ability to keep pace with incoming work (Speed vs. Intake). A ratio greater than 1.0 indicates the agency is clearing cases faster than they arrive (reducing the backlog), while a ratio less than 1.0 indicates the backlog is growing.
+                </li>
 
-                <dt>3. Net Pending Caseload Growth</dt>
-                <dd><em>Formula: [Monthly Receipts] - [Determinations]</em><br>
-                This represents the raw volume added to the pile in a given month. A positive value means intake exceeded clearance (growth), while a negative value means the agency successfully reduced its total inventory.</dd>
+                <li>
+                    <strong>Net Pending Caseload Growth</strong><br>
+                    <em>Formula: [Monthly Receipts] - [Determinations]</em><br>
+                    This represents the raw volume added to the pile in a given month. A positive value means intake exceeded clearance (growth), while a negative value means the agency successfully reduced its total inventory.
+                </li>
 
-                <dt>4. Operational Status (Scatterplot Segmentation)</dt>
-                <dd>To diagnose agency health, states are segmented based on the interaction between pressure and speed:
-                    <ul>
+                <li>
+                    <strong>Operational Status (Scatterplot Segmentation)</strong><br>
+                    To diagnose agency health, states are segmented based on the interaction between pressure and speed:
+                    <ul class="status-sublist">
                         <li><strong>Overloaded:</strong> (High Intensity + Low Clearance) – Heavy inventory with slowing processing speeds.</li>
                         <li><strong>Accumulating:</strong> (Low Intensity + Low Clearance) – Manageable inventory, but processing is too slow to prevent growth.</li>
                         <li><strong>High Volume:</strong> (High Intensity + High Clearance) – Heavy workload but successfully managing the surge.</li>
                         <li><strong>Stable:</strong> (Low Intensity + High Clearance) – Operating within healthy limits.</li>
                     </ul>
-                </dd>
-            </dl>
+                </li>
+            </ol>
 
             <h2>Working Papers</h2>
             <p><strong class="paper-title">Spillovers from workers&rsquo; compensation to Social Security Disability Insurance: evidence from Oregon</strong></p>
@@ -180,5 +188,3 @@
     </noscript>
     </body>
 </html>
-
-
