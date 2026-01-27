@@ -1,6 +1,6 @@
 html {
-  -webkit-text-size-adjust: 100%; /* Targets iOS Safari */
-  text-size-adjust: 100%;         /* Standard property for other browsers/future */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 @font-face {
@@ -41,7 +41,7 @@ body {
   margin: 0;
   padding: 1.25rem;
   line-height: 1.6;
-  background-color: #FFF; /* Previously #FFF8E7 */
+  background-color: #FFF;
   color: #222;
 }
 
@@ -50,8 +50,6 @@ body {
   margin: 0 auto;
   background-color: #FFF;
   padding: 0 2.5rem 2.5rem 2.5rem;
-  /* Previously box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 5px; */
 }
 
 .flexbox {
@@ -135,15 +133,15 @@ h2 {
 }
 
 .contact-links {
-  list-style: none; /* Removes the bullet points */
-  padding-left: 0; /* Removes the default indentation */
+  list-style: none;
+  padding-left: 0;
   font-size: 1.25rem;
   margin-left: 0;  
-  margin-top: 1.25rem; /* Add space above the links */
+  margin-top: 1.25rem;
 }
 
 .contact-links li {
-  margin-bottom: 0.5em; /* Adds a small, clean space between items */
+  margin-bottom: 0.5em;
 }
 
 .paper-title {
@@ -206,7 +204,7 @@ a.pill-button {
   font-family: "Source Sans", serif;
   display: inline-block;
   background-color: #4169E1;
-  color: white; /* This needs to stick */
+  color: white;
   padding: 10px 20px;
   border-radius: 50px;
   text-decoration: none;
@@ -219,12 +217,10 @@ a.pill-button {
   border: 2px solid transparent;
 }
 
-/* Ensure Visited links don't turn blue/purple */
 a.pill-button:visited {
   color: white;
 }
 
-/* Hover Effect */
 a.pill-button:hover {
   background-color: #00008B;
   color: white;
@@ -232,22 +228,19 @@ a.pill-button:hover {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Outline/Ghost Button Overrides */
 a.pill-button-outline {
   background-color: transparent;
-  color: #4169E1; /* Blue text for outline button */
+  color: #4169E1;
   border: 2px solid #4169E1;
 }
 
-/* Outline Visited */
 a.pill-button-outline:visited {
   color: #4169E1;
 }
 
-/* Outline Hover */
 a.pill-button-outline:hover {
   background-color: #4169E1;
-  color: white; /* Turns white on hover */
+  color: white;
 }
 
 .bottom-paragraph {
@@ -262,7 +255,7 @@ a.pill-button-outline:hover {
 
 /* === Forensic Dashboard & Methodology Styles === */
 
-/* Tableau Container - Responsive Width, Fixed Height for mobile usability */
+/* Tableau Container */
 .tableau-container {
     width: 100%;
     height: 850px;
@@ -276,33 +269,36 @@ a.pill-button-outline:hover {
 .methodology-section-header {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Stays same size as main paragraphs */
     font-weight: bold;
     color: #333;
+    margin-left: 2.5rem; /* Align with P */
 }
 
-/* Intro Paragraph Styling (Ensures match with lists) */
+/* Intro Paragraph Styling */
 .methodology-intro {
-    font-size: 1.25rem;
+    font-size: 1rem; /* Smaller size per latest request */
     line-height: 1.6;
     margin-bottom: 1rem;
     color: #333;
+    margin-left: 2.5rem; /* Align with P */
 }
 
 /* Common Styles for ALL Lists (Variables & Metrics) */
 .variable-list,
 .methodology-list {
-    font-size: 1.25rem;    /* Forces exact size match */
+    font-size: 1rem; /* Smaller size per latest request */
     line-height: 1.6;
     color: #333;
     margin-bottom: 2rem;
-    padding-left: 2rem;    /* Standard indentation to align bullets with text */
+    margin-left: 2.5rem; /* Align with P */
+    padding-left: 1.5rem; /* Bullet indentation */
 }
 
 /* Spacing between list items */
 .variable-list li,
 .methodology-list > li {
-    margin-bottom: 1.5rem; /* Breathing room between complex definitions */
+    margin-bottom: 1.5rem;
 }
 
 /* Bold Terms inside the list */
@@ -312,18 +308,25 @@ a.pill-button-outline:hover {
     color: #000;
 }
 
+/* Bold Numbers for Ordered List */
+.methodology-list li::marker {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* Sub-list (The 4 Quadrants) specific styling */
 .status-sublist {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding-left: 2rem;
-    list-style-type: circle; /* Different bullet style for nested items */
-    font-size: 1.25rem;
+    list-style-type: circle;
+    font-size: 1rem;
 }
 
 .status-sublist li {
     margin-bottom: 0.5rem;
 }
+
 
 @media (max-width: 1080px) {
   .container {
@@ -356,9 +359,18 @@ a.pill-button-outline:hover {
     height: auto;
   }
 
+  /* Reset Margins for Paragraphs */
   p {
     margin-left: 0;
     font-size: 1.125rem;
+  }
+
+  /* Reset Margins for Methodology Sections */
+  .methodology-section-header,
+  .methodology-intro,
+  .variable-list,
+  .methodology-list {
+    margin-left: 0;
   }
 
   .contact-links {
@@ -370,24 +382,22 @@ a.pill-button-outline:hover {
     font-size: 0.75rem;
   }
 
-/* The Container: Forces vertical stacking */
   .button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     margin-top: 2rem;
-    margin-left: 0;  /* Add this line */
+    margin-left: 0;
   }
   
-  /* The Buttons: Adjustments for the stack */
   a.pill-button, 
   a.pill-button-outline {
-    margin: 0;       /* Remove the desktop margins */
-    width: 200px;    /* Optional: Sets a uniform width for a cleaner look */
+    margin: 0;
+    width: 200px;
     text-align: center; 
-    display: flex;          /* These 3 lines ensure text centers perfectly... */
-    justify-content: center;/* ...inside the button itself */
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }
