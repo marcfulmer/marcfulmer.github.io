@@ -262,53 +262,67 @@ a.pill-button-outline:hover {
 
 /* === Forensic Dashboard & Methodology Styles === */
 
-/* Tableau Container */
+/* Tableau Container - Responsive Width, Fixed Height for mobile usability */
 .tableau-container {
     width: 100%;
-    height: 850px; /* Fixed height ensures map is readable on small screens */
+    height: 850px;
     overflow: hidden;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    border: 1px solid #eee; /* Optional: adds a crisp edge to the viz */
+    border: 1px solid #eee;
 }
 
-/* Methodology Section Header */
+/* Section Header (Methodology) */
 .methodology-section-header {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-}
-
-/* Variable Definitions List (Bullets) */
-.variable-list {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    font-size: inherit; /* Ensures exact match with paragraph text */
-}
-
-.variable-list li {
-    margin-bottom: 0.5rem;
-}
-
-/* Methodology Definition List (Terms & Definitions) */
-.methodology-list {
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    font-size: inherit; /* Ensures exact match with paragraph text */
-}
-
-/* The Terms (e.g., "1. Pending Caseload Intensity") */
-.methodology-list dt {
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-top: 1rem;
     color: #333;
-    font-size: inherit; /* No larger than standard text */
 }
 
-/* The Definitions */
-.methodology-list dd {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
+/* Intro Paragraph Styling (Ensures match with lists) */
+.methodology-intro {
+    font-size: 1.25rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Common Styles for ALL Lists (Variables & Metrics) */
+.variable-list,
+.methodology-list {
+    font-size: 1.25rem;    /* Forces exact size match */
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+    padding-left: 2rem;    /* Standard indentation to align bullets with text */
+}
+
+/* Spacing between list items */
+.variable-list li,
+.methodology-list > li {
+    margin-bottom: 1.5rem; /* Breathing room between complex definitions */
+}
+
+/* Bold Terms inside the list */
+.variable-list strong,
+.methodology-list strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Sub-list (The 4 Quadrants) specific styling */
+.status-sublist {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    list-style-type: circle; /* Different bullet style for nested items */
+    font-size: 1.25rem;
+}
+
+.status-sublist li {
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 1080px) {
