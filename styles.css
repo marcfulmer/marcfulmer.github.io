@@ -268,20 +268,11 @@ a.pill-button-outline:hover {
 /* Section Header (Methodology) */
 .methodology-section-header {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.25rem; /* Stays same size as main paragraphs */
-    font-weight: bold;
-    color: #333;
-    margin-left: 2.5rem; /* Align with P */
+    font-weight: 700;
 }
 
 /* Intro Paragraph Styling */
 .methodology-intro {
-    font-size: 1.125rem; /* Smaller size per latest request */
-    line-height: 1.33;
-    margin-bottom: 1rem;
-    color: #333;
-    margin-left: 2.5rem; /* Align with P */
 }
 
 /* Common Styles for ALL Lists (Variables & Metrics) */
@@ -289,7 +280,7 @@ a.pill-button-outline:hover {
 .methodology-list {
     font-size: 1.125rem; /* Smaller size per latest request */
     line-height: 1.33;
-    color: #333;
+    color: #222;
     margin-bottom: 1rem;
     margin-left: 2.5rem; /* Align with P */
     padding-left: 1.5rem; /* Bullet indentation */
@@ -304,8 +295,8 @@ a.pill-button-outline:hover {
 /* Bold Terms inside the list */
 .variable-list strong,
 .methodology-list strong {
-    font-weight: bold;
-    color: #000;
+    font-weight: 700;
+    color: #222;
 }
 
 /* Bold Numbers for Ordered List */
