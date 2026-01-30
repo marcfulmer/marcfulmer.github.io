@@ -212,7 +212,7 @@ a.pill-button {
   margin-top: 0;
   margin-right: 10px;
   margin-bottom: 0;
-  transition: background 1s;
+  transition: background 0.5s;
   border: 2px solid transparent;
 }
 
