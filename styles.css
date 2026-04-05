@@ -4,22 +4,6 @@ html {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url(Inter-VariableFont_opsz,wght.ttf);
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Sans";
-  src: url(Inter-Italic-VariableFont_opsz,wght.ttf);
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Source Sans";
   src: url(SourceSans3-VariableFont_wght.ttf);
   font-weight: 200 900;
@@ -52,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "Source Sans", serif;
   font-size: 16px;
   margin: 0;
   padding: 1.25rem;
@@ -96,7 +80,7 @@ nav li {
 }
 
 nav a {
-  font-family: "Inter", serif;
+  font-family: "Source Sans", serif;
   text-decoration: none;
 }
 
@@ -141,7 +125,7 @@ hr {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 700;
   font-style: italic;
   margin-top: 1rem;
@@ -179,8 +163,8 @@ p {
   margin-top: 0;
   margin-left: 2.5rem;
   margin-bottom: 1em;
-  line-height: 1.5;
-  font-size: 1.125rem;
+  line-height: 1.33;
+  font-size: 1.25rem;
 }
 
 .footer {
@@ -216,7 +200,7 @@ a:active {
 
 /* Base Button Style */
 a.pill-button {
-  font-family: "Inter", serif;
+  font-family: "Source Sans", serif;
   display: inline-block;
   background-color: #4169E1;
   color: white;
