@@ -321,29 +321,29 @@ a.pill-button-outline:hover {
   img {
     display: block;
     margin: 0 auto 1.5rem auto;
-    transform: translateX(5px); 
+    transform: translateX(2.5px);
     max-width: 200px;
   }
 
-  /* Reset layout margins for mobile while keeping text left-aligned */
   p, .methodology-section-header, .methodology-intro, 
   .variable-list, .methodology-list, .contact-links {
     margin: 0 0 1rem 0;
     text-align: left;
   }
 
-  /* Centered Nav: Reset default UL padding to fix the "left shift" */
+  /* Centered Nav Fix */
   nav { justify-content: center; margin-bottom: 1.5rem; }
-  nav ul { padding: 0; margin: 0; } 
+  nav ul { padding: 0; margin: 0; }
   nav li { margin: 0 0.5rem; }
 
-  /* Centered Buttons with bottom spacing */
+  /* Equalized Button Spacing */
   .button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;    /* Added to match bottom spacing */
+    margin-bottom: 2rem; /* Matches top spacing */
   }
 
   a.pill-button, a.pill-button-outline {
@@ -356,4 +356,3 @@ a.pill-button-outline:hover {
   .container { padding: 0 0.25rem 2rem 0.25rem; }
   h1 { font-size: 2.25rem; text-align: left; }
 }
-
