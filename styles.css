@@ -321,7 +321,7 @@ a.pill-button-outline:hover {
   img {
     display: block;
     margin: 0 auto 1.5rem auto;
-    transform: translateX(2.5px);
+    transform: translateX(-2.5px);
     max-width: 200px;
   }
 
