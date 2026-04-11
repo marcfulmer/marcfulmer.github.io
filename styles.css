@@ -335,6 +335,7 @@ a.pill-button-outline:hover {
 
   .flexbox {
     flex-direction: column;
+    align-items: center;
   }
 
   img {
@@ -342,7 +343,7 @@ a.pill-button-outline:hover {
     margin: auto;
     margin-bottom: 1rem;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
   }
 
@@ -374,7 +375,8 @@ a.pill-button-outline:hover {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     margin-left: 0;
   }
   
