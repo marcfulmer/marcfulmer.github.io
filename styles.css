@@ -342,8 +342,8 @@ a.pill-button-outline:hover {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;    /* 1rem (here) + 1rem (from <p>) = 2rem total top space */
-    margin-bottom: 2rem; /* 2rem total bottom space */
+    margin-top: 2rem;    
+    margin-bottom: 2rem;
   }
 
   a.pill-button, a.pill-button-outline {
