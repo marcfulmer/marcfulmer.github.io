@@ -314,79 +314,55 @@ a.pill-button-outline:hover {
     margin-bottom: 0.5rem;
 }
 
-
 @media (max-width: 1080px) {
   .container {
-    padding-left: 0.125rem;
-    padding-right: 0.125rem;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  .italic {
-    text-align: center;
+    padding: 0 1rem 2rem 1rem; /* More natural mobile breathing room */
   }
 
   .flexbox {
     flex-direction: column;
-    align-items: center;
+  }
+
+  .left-column, .right-column {
+    flex: 0 0 100%;
+    width: 100%;
   }
 
   img {
     display: block;
-    margin: auto;
-    margin-bottom: 1rem;
-    border-radius: 5px;
+    margin: 0 auto 1.5rem auto; /* Centers the image independently */
     max-width: 200px;
-    height: auto;
   }
 
-  /* Reset Margins for Paragraphs */
   p {
-    margin-left: 0;
+    margin: 0 0 1rem 0; /* Resets both left and right margins for mobile */
     font-size: 1.125rem;
   }
 
-  /* Reset Margins for Methodology Sections */
-  .methodology-section-header,
-  .methodology-intro,
-  .variable-list,
-  .methodology-list {
+  /* Reset all methodology/list margins to 0 for mobile */
+  .methodology-section-header, .methodology-intro, 
+  .variable-list, .methodology-list, .contact-links {
     margin-left: 0;
   }
 
-  .contact-links {
-    margin-left: 0;
-    font-size: 1.125rem;
-  }
-  
-  .footer {
-    font-size: 0.75rem;
-  }
-
+  /* Button centering */
   .button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 0;
+    gap: 1rem;
+    margin: 1.5rem 0;
   }
-  
-  a.pill-button, 
-  a.pill-button-outline {
-    margin: 0;
+
+  a.pill-button, a.pill-button-outline {
     width: 200px;
-    text-align: center; 
-    display: flex;
+    margin: 0;
     justify-content: center;
-    align-items: center;
   }
+
+  /* Keep nav functional on small screens */
+  nav { justify-content: center; margin-bottom: 1rem; }
+  nav li { margin: 0 0.5rem; }
+  h1 { font-size: 2.25rem; }
 }
+
