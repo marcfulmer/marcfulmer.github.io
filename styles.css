@@ -129,6 +129,12 @@ h2.first {
   margin-top: 0;
 }
 
+h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+
 .contact-links {
   list-style: none;
   padding-left: 0;
