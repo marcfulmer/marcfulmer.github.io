@@ -4,39 +4,23 @@ html {
 }
 
 @font-face {
-  font-family: "Source Sans";
-  src: url(SourceSans3-VariableFont_wght.ttf);
-  font-weight: 200 900;
+  font-family: "Figtree";
+  src: url(Figtree-VariableFont_wght.ttf);
+  font-weight: 300 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans";
-  src: url(SourceSans3-Italic-VariableFont_wght.ttf);
-  font-weight: 200 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Serif";
-  src: url(SourceSerif4-VariableFont_opsz,wght.ttf);
-  font-weight: 200 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Serif";
-  src: url(SourceSerif4-Italic-VariableFont_opsz,wght.ttf);
-  font-weight: 200 900;
+  font-family: "Figtree";
+  src: url(Figtree-Italic-VariableFont_wght.ttf);
+  font-weight: 300 900;
   font-style: italic;
   font-display: swap;
 }
 
 body {
-  font-family: "Source Sans", serif;
+  font-family: "Figtree", serif;
   font-size: 16px;
   margin: 0;
   padding: 1.25rem;
@@ -62,6 +46,14 @@ body {
   padding-bottom: 0;
 }
 
+.left-column {
+  flex: 0 0 60%; /* Do not grow, do not shrink, start at 60% */
+}
+
+.right-column {
+  flex: 0 0 40%; /* Do not grow, do not shrink, start at 40% */
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -80,7 +72,7 @@ nav li {
 }
 
 nav a {
-  font-family: "Source Sans", serif;
+  font-family: "Figtree", serif;
   text-decoration: none;
 }
 
@@ -115,6 +107,7 @@ h1 {
   margin: 0;
   font-size: 2.75rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 hr {
@@ -200,7 +193,7 @@ a:active {
 
 /* Base Button Style */
 a.pill-button {
-  font-family: "Source Sans", serif;
+  font-family: "Figtree", serif;
   display: inline-block;
   background-color: #4169E1;
   color: white;
