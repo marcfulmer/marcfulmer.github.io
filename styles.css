@@ -47,11 +47,11 @@ body {
 }
 
 .left-column {
-  flex: 0 0 80%; /* Do not grow, do not shrink, start at 60% */
+  flex: 0 0 80%; /* Do not grow, do not shrink, start at 80% */
 }
 
 .right-column {
-  flex: 0 0 40%; /* Do not grow, do not shrink, start at 40% */
+  flex: 0 0 20%; /* Do not grow, do not shrink, start at 20% */
 }
 
 nav {
