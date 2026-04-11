@@ -38,7 +38,7 @@ body {
 
 .flexbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   margin-top: 0;
   padding-top: 0;
@@ -155,7 +155,8 @@ img {
 p {
   margin-top: 0;
   margin-left: 0; /* was 2.5rem */
-  margin-bottom: 1em;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
   line-height: 1.33;
   font-size: 1.25rem;
 }
