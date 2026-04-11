@@ -318,15 +318,13 @@ a.pill-button-outline:hover {
   .flexbox { flex-direction: column; }
   .left-column, .right-column { flex: 0 0 100%; width: 100%; }
 
-  /* Image centering (ignoring the 5px shadow) */
   img {
     display: block;
     margin: 0 auto 1.5rem auto;
-    transform: translateX(2.5px); /* Offsets the 5px right-side shadow to perfectly center the pixels */
+    transform: translateX(2.5px); /* Offsets the 5px shadow */
     max-width: 200px;
   }
 
-  /* Keep text left-aligned but reset desktop margins */
   p, .methodology-section-header, .methodology-intro, 
   .variable-list, .methodology-list, .contact-links {
     margin-left: 0;
@@ -334,23 +332,22 @@ a.pill-button-outline:hover {
     text-align: left;
   }
 
-  /* Centered Button Layout */
   .button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem; /* Re-adds margin below the bottom button */
   }
 
   a.pill-button, a.pill-button-outline {
     width: 200px;
-    justify-content: center; /* Centers text inside button */
-    text-align: center;      /* Backup for older browsers */
-    margin: 0;
+    justify-content: center;
+    text-align: center;
+    margin: 0; /* Gap handles the spacing between buttons */
   }
 
-  /* Responsive fixes */
   .container { padding: 0 1rem 2rem 1rem; }
-  nav { justify-content: center; }
-  h1 { font-size: 2.25rem; text-align: left; }
+  nav { justify-content: center; margin-bottom: 1rem; }
+  h1 { font-size: 2.25rem; }
 }
