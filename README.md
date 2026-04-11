@@ -1,1 +1,1 @@
-Personal website for Marc Fulmer
+Professional website for Marc Fulmer, economist and data scientist. 
