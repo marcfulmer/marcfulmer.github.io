@@ -116,51 +116,13 @@
                 };
                 var viz = new tableau.Viz(divElement, url, options);
             </script>
-            <p class="methodology-section-header">Methodology & Definitions</p>
-            <p class="methodology-intro">This analysis utilizes SSA State Agency Monthly Workload (SA MOWL) data on claims for Social Security Disability Insurance and Supplemental Security Income sent to state Disability Determination Services. The derived metrics are constructed from three core administrative variables, where (All Initial) refers to claims for Social Security Disability Insurance, Supplemental Security Income, or both:</p>
-            
-            <ul class="variable-list">
-                <li><strong>[Receipts (All Initial)]:</strong> The total count of new initial claims received by the state Disability Determination Service in the reporting month.</li>
-                <li><strong>[Determinations (All Initial)]:</strong> The total count of initial claims cleared by the state Disability Determination Service in the reporting month.</li>
-                <li><strong>[Closing Pending (All Initial)]:</strong> The total count of initial claims <em>not</em> cleared by the state Disability Determination Service at the end of the reporting month.</li>
-            </ul>
-
-            <ol class="methodology-list">
-                <li>
-                    <strong>Pending Caseload Intensity</strong><br>
-                    <em>Formula: [Closing Pending (All Initial)] / [Receipts (All Initial)]</em><br>
-                    This metric measures &ldquo;Months of Inventory.&rdquo; It normalizes the size of the pending caseload relative to the office&rsquo;s current intake volume. For example, a value of 4.0 indicates that the state holds four months&rsquo; worth of work in its queue at current intake rates. Higher values indicate higher intensity, regardless of the state&rsquo;s size.
-                </li>
-
-                <li>
-                    <strong>Clearance Ratio</strong><br>
-                    <em>Formula: [Determinations (All Initial)] / [Receipts (All Initial)]</em><br>
-                    This measures the agency&rsquo;s ability to keep pace with incoming work. A ratio greater than 1.0 indicates the agency is clearing cases faster than they arrive (reducing the caseload), while a ratio less than 1.0 indicates the caseload is growing.
-                </li>
-
-                <li>
-                    <strong>Net Pending Caseload Growth</strong><br>
-                    <em>Formula: [Receipts (All Initial)] - [Determinations (All Initial)]</em><br>
-                    This represents the raw volume added to the caseload in a given month. A positive value means intake exceeded clearance, while a negative value means the agency successfully reduced its total inventory.
-                </li>
-
-                <li>
-                    <strong>Operational Status</strong><br>
-                    States are segmented based on the interaction between their Pending Caseload Intensity and Clearance Ratio:
-                    <ul class="status-sublist">
-                        <li><strong>Overloaded:</strong> (Intensity &gt; Average; Clearance Ratio &lt; 1.0) &ndash; Higher inventory levels relative to intake; determinations are lagging behind receipts (net growth).</li>
-                        <li><strong>Accumulating:</strong> (Intensity &lt; Average; Clearance Ratio &lt; 1.0) &ndash; Lower inventory levels relative to intake; determinations are lagging behind receipts (net growth).</li>
-                        <li><strong>High Volume:</strong> (Intensity &gt; Average; Clearance Ratio &geq; 1.0) &ndash; Higher inventory levels relative to intake; determinations are keeping pace with or exceeding receipts (equilibrium or net reduction).</li>
-                        <li><strong>Stable:</strong> (Intensity &lt; Average; Clearance Ratio &geq; 1.0) &ndash; Lower inventory levels relative to intake; determinations are keeping pace with or exceeding receipts (equilibrium or net reduction).</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><a href="DashboardMethodology.pdf" target="_blank" rel="noopener noreferrer">Methodology</a></p>
             <p class="paper-title"><a href="MarcFulmerPolicyBriefOregonWC.pdf" target="_blank" rel="noopener noreferrer">The Decrease in Workers&rsquo; Compensation Awards: Safer Workplaces or Stricter Insurers?</a>
             <br>Policy Brief</p>
+            <p>Between 2003 and 2018, awards in Oregon declined by 35.5 percent, raising a central policy and industry question: are workplaces becoming safer, or are insurers becoming more restrictive? Using administrative claims data from the Oregon Department of Consumer and Business Services and injury data from the Bureau of Labor Statistics, analysis indicates that improvements in workplace safety account for the entire reduction in awards. </p>
             <p class="paper-title"><a href="MarcFulmerWCSpillovers.pdf" target="_blank" rel="noopener noreferrer">Spillovers from workers&rsquo; compensation to Social Security Disability Insurance: evidence from Oregon</a>
             <br>Research Project</p>
-            <p class="paper-title"><a href="MarcFulmerWCAwards.pdf" target="_blank" rel="noopener noreferrer">Understanding changes over time in awards for workers&rsquo; compensation benefits: evidence from Oregon</a>              <br>Research Project</p>
-
+            <p>How do changes in workers’ compensation law spillover to applications for benefits from Social Security Disability Insurance? Using SSA State Agency Monthly Workload Data, analysis indicates no spillover effect from a 2003 change in Oregon law.</p>
         </main>
         <footer>
             <p class="footer">&copy; <script>document.write(new Date().getFullYear())</script>, Marc Fulmer.</p>
