@@ -202,6 +202,10 @@ a:active {
   text-align: center;
 }
 
+.academic {
+  padding-left: 20px;
+}  
+
 /* Base Button Style */
 a.pill-button {
   font-family: "Figtree", serif;
