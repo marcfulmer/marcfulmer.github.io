@@ -115,7 +115,11 @@ h3 {
   font-size: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+strong.capability {
+  font-weight: 500;
 }
 
 .contact-links {
