@@ -3,36 +3,20 @@ html {
   text-size-adjust: 100%;
 }
 
-@font-face {
-  font-family: "Figtree";
-  src: url(Figtree-VariableFont_wght.ttf);
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Figtree";
-  src: url(Figtree-Italic-VariableFont_wght.ttf);
-  font-weight: 300 900;
-  font-style: italic;
-  font-display: swap;
-}
-
 body {
-  font-family: "Figtree", serif;
+  font-family: "Bitter", serif;
   font-size: 16px;
   margin: 0;
   padding: 1.25rem;
-  line-height: 1.33;
-  background-color: #F9F9F9;
+  line-height: 1.5;
+  background-color: #F5F2EB;
   color: #222;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #F9F9F9;
+  background-color: #F5F2EB;
   padding: 0 2.5rem 2.5rem 2.5rem;
 }
 
@@ -47,11 +31,11 @@ body {
 }
 
 .left-column {
-  flex: 0 0 80%; /* Do not grow, do not shrink, start at 80% */
+  flex: 0 0 80%;
 }
 
 .right-column {
-  flex: 0 0 20%; /* Do not grow, do not shrink, start at 20% */
+  flex: 0 0 20%;
 }
 
 nav {
@@ -72,7 +56,7 @@ nav li {
 }
 
 nav a {
-  font-family: "Figtree", serif;
+  font-family: "Bitter", serif;
   text-decoration: none;
 }
 
@@ -163,11 +147,11 @@ img {
 
 p {
   margin-top: 1rem;
-  margin-left: 0; /* was 2.5rem */
+  margin-left: 0;
   margin-right: 1.25rem;
   margin-bottom: 1rem;
-  line-height: 1.5;
-  font-size: 1.25rem;
+  line-height: 1.6;
+  font-size: 1.185rem;
 }
 
 .footer {
@@ -177,23 +161,23 @@ p {
 }
 
 a:link {
-  color: #4169E1;
+  color: #8B1C1C;
   font-weight: 500;
 }
 
 a:visited {
-  color: #4169E1;
+  color: #8B1C1C;
   font-weight: 500;
 }
 
 a:hover {
-  color: #4169E1;
+  color: #5A1212;
   font-weight: 500;
   text-decoration: none;
 }
 
 a:active {
-  color: #4169E1;
+  color: #8B1C1C;
   font-weight: 500;
 }
 
@@ -206,14 +190,14 @@ a:active {
 
 /* Base Button Style */
 a.pill-button {
-  font-family: "Figtree", serif;
+  font-family: "Bitter", serif;
   display: inline-block;
-  background-color: #4169E1;
+  background-color: #8B1C1C;
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.125rem;
   margin-top: 0;
   margin-right: 1rem;
@@ -227,7 +211,7 @@ a.pill-button:visited {
 }
 
 a.pill-button:hover {
-  background-color: #00008B;
+  background-color: #5A1212;
   color: white;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -235,16 +219,16 @@ a.pill-button:hover {
 
 a.pill-button-outline {
   background-color: transparent;
-  color: #4169E1;
-  border: 2px solid #4169E1;
+  color: #8B1C1C;
+  border: 2px solid #8B1C1C;
 }
 
 a.pill-button-outline:visited {
-  color: #4169E1;
+  color: #8B1C1C;
 }
 
 a.pill-button-outline:hover {
-  background-color: #4169E1;
+  background-color: #8B1C1C;
   color: white;
 }
 
@@ -258,7 +242,6 @@ a.pill-button-outline:hover {
 
 /* === Forensic Dashboard & Methodology Styles === */
 
-/* Tableau Container */
 .tableau-container {
     width: 100%;
     height: 850px;
@@ -268,48 +251,41 @@ a.pill-button-outline:hover {
     border: 1px solid #eee;
 }
 
-/* Section Header (Methodology) */
 .methodology-section-header {
     margin-top: 1rem;
     font-weight: 700;
 }
 
-/* Intro Paragraph Styling */
 .methodology-intro {
   font-size: 1.125rem;
 }
 
-/* Common Styles for ALL Lists (Variables & Metrics) */
 .variable-list,
 .methodology-list {
-    font-size: 1.125rem; /* Smaller size per latest request */
-    line-height: 1.33;
+    font-size: 1.125rem;
+    line-height: 1.45;
     color: #222;
     margin-bottom: 1rem;
-    margin-left: 2.5rem; /* Align with P */
-    padding-left: 1.5rem; /* Bullet indentation */
+    margin-left: 2.5rem;
+    padding-left: 1.5rem;
 }
 
-/* Spacing between list items */
 .variable-list li,
 .methodology-list > li {
     margin-bottom: 1rem;
 }
 
-/* Bold Terms inside the list */
 .variable-list strong,
 .methodology-list strong {
     font-weight: 700;
     color: #222;
 }
 
-/* Bold Numbers for Ordered List */
 .methodology-list li::marker {
     font-weight: 700;
     font-size: 1.125rem;
 }
 
-/* Sub-list (The 4 Quadrants) specific styling */
 .status-sublist {
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -338,12 +314,10 @@ a.pill-button-outline:hover {
     text-align: left;
   }
 
-  /* Centered Nav Fix */
   nav { justify-content: center; margin-bottom: 1.5rem; }
   nav ul { padding: 0; margin: 0; }
   nav li { margin: 0 0.5rem; }
 
-  /* Equalized Button Spacing */
   .button-wrapper {
     display: flex;
     flex-direction: column;
